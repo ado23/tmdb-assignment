@@ -1,0 +1,99 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "eslint-config-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react-refresh", "no-relative-import-paths", "import"],
+  "rules": {
+    "react-refresh/only-export-components": "warn",
+    "import/no-named-as-default-member": "off",
+    "import/named": "off",
+    "no-alert": "error",
+    "no-console": "warn",
+    "no-empty-function": "warn",
+    "no-param-reassign": "warn",
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "no-unused-expressions": "error",
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    // turn on errors for missing imports
+    "import/no-unresolved": "error",
+    // 'import/no-named-as-default-member': 'off',
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin", // Built-in imports (come from NodeJS native) go first
+          "external", // <- External imports
+          "internal", // <- Absolute imports
+          ["sibling", "parent"], // <- Relative imports, the sibling and parent types they can be mingled together
+          "index", // <- index imports
+          "unknown" // <- unknown
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          /* sort in ascending order. Options: ["ignore", "asc", "desc"] */
+          "order": "asc",
+          /* ignore case. Options: [true, false] */
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/first": "error",
+    "no-relative-import-paths/no-relative-import-paths": ["warn", { "rootDir": "src" }],
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true, "argsIgnorePattern": "^_" }
+    ],
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "ignorePatterns": [
+    ".eslintrc.cjs",
+    "**/*test.tsx",
+    "**/*.css",
+    "**/node_modules/**",
+    "/built/**",
+    "/dist/**",
+    "/tests/**",
+    "/lib/**",
+    "/src/lib/*.generated.d.ts",
+    "/scripts/**/*.js",
+    "/scripts/**/*.d.*",
+    "/internal/**",
+    "/coverage/**"
+  ]
+}
