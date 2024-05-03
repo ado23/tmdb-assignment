@@ -13,7 +13,8 @@
     "build": "tsc && eslint ./src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0 && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-api": "npx swagger-typescript-api -p https://developer.themoviedb.org/openapi/64542913e1f86100738e227f -o ./src/core/api -n generatedApi --axios --extract-request-params --extract-request-body --extract-response-error"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -42,12 +43,13 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "husky": "^8.0.0",
     "jsdom": "^24.0.0",
     "prettier": "^3.2.5",
+    "swagger-typescript-api": "^13.0.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^1.5.3",
-    "husky": "^8.0.0"
+    "vitest": "^1.5.3"
   }
 }

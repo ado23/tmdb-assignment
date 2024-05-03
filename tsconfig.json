@@ -10,6 +10,8 @@
     "paths": {
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"],
+      "store/*": ["src/store/*"],
+      "api/*": ["src/core/api/*"],
       "router/*": ["src/core/router/*"]
     },
     "types": ["vitest/globals", "@testing-library/jest-dom"],
