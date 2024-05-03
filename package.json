@@ -8,10 +8,12 @@
   "license": "MIT",
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
     "lint": "eslint ./src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier ./src --write",
+    "build": "tsc && eslint ./src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0 && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -45,6 +47,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^1.5.3"
+    "vitest": "^1.5.3",
+    "husky": "^8.0.0"
   }
 }
