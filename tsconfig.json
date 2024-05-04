@@ -8,11 +8,12 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
+      "api/*": ["src/core/api/*"],
+      "router/*": ["src/core/router/*"],
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"],
       "store/*": ["src/store/*"],
-      "api/*": ["src/core/api/*"],
-      "router/*": ["src/core/router/*"]
+      "hooks/*": ["src/hooks/*"]
     },
     "types": ["vitest/globals", "@testing-library/jest-dom"],
 
