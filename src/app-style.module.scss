@@ -1,0 +1,59 @@
+@use "src/styles/variables.scss" as variables;
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.9fr 0.1fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  grid-gap: 0.2rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav {
+  background: variables.$primary;
+  grid-area: nav;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px;
+  color: white;
+}
+
+main {
+  padding: 10px 0px;
+  grid-area: main;
+  display: flex;
+  background: whitesmoke;
+  flex-direction: column;
+}
+
+footer {
+  background: variables.$primary;
+  grid-area: footer;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2.2fr 0.1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+  }
+}

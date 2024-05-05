@@ -1,6 +1,10 @@
+import style from "components/loader/style.module.scss";
+
 const Loader = () => (
-  <div>
-    <p>LOADING</p>
+  <div className={style.loaderOuterContainer}>
+    <div>
+      <div className={style.loader} />
+    </div>
   </div>
 );
 

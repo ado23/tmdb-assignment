@@ -14,7 +14,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "prepare": "husky install",
-    "generate-api": "npx swagger-typescript-api -p https://developer.themoviedb.org/openapi/64542913e1f86100738e227f -o ./src/core/api -n generatedApi --axios --extract-request-params --extract-request-body --extract-response-body --extract-response-error"
+    "generate-api": "npx swagger-typescript-api -p https://developer.themoviedb.org/openapi/64542913e1f86100738e227f -o ./src/core/api -n generatedApi --axios --extract-request-params --extract-request-body --extract-response-body --extract-response-error",
+    "update-sprite": "svg-sprite -s --symbol-dest src --symbol-sprite assets/icons/sprite.svg src/assets/icons/svg/*/*.svg"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -46,6 +47,8 @@
     "husky": "^8.0.0",
     "jsdom": "^24.0.0",
     "prettier": "^3.2.5",
+    "sass": "^1.76.0",
+    "svg-sprite": "^2.0.4",
     "swagger-typescript-api": "^13.0.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
