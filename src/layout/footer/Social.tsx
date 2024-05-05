@@ -7,7 +7,7 @@ const Social: FC = () => (
   <div className={styles.social}>
     <div className={styles.footerItem}>
       <a href="https://github.com/ado23" target="_blank" rel="noreferrer">
-        <Icon name="github" fillColor="white" />
+        <Icon name="github" fill="white" />
       </a>
     </div>
 
@@ -17,7 +17,7 @@ const Social: FC = () => (
         target="_blank"
         rel="noreferrer"
       >
-        <Icon name="linkedin" fillColor="white" />
+        <Icon name="linkedin" fill="white" />
       </a>
     </div>
   </div>

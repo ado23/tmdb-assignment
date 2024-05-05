@@ -1,10 +1,10 @@
-@use "src/styles/variables.scss" as variables;
+@import "src/styles/variables.scss";
 
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 1.9fr 0.1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-areas:
     "nav nav nav"
     "main main main"
@@ -13,38 +13,36 @@
   color: black;
   font-weight: bold;
   text-align: center;
+  overflow-y: auto;
 }
 
 nav {
-  background: variables.$primary;
+  background: $primary-color;
   grid-area: nav;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   padding: 10px 0px;
-  color: white;
+  color: $white-color;
 }
 
 main {
   padding: 10px 0px;
   grid-area: main;
   display: flex;
-  background: whitesmoke;
+  background: $container-color;
   flex-direction: column;
 }
 
 footer {
-  background: variables.$primary;
+  background: $primary-color;
   grid-area: footer;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  margin: 0;
 }
 
 @media only screen and (max-width: 550px) {

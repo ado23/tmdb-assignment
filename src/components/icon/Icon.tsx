@@ -10,7 +10,7 @@ type TSvgIcon = {
   h?: string;
   background?: string;
   color?: string;
-  fillColor?: string;
+  fill?: string;
   stroke?: string;
   strokeWidth?: string;
 };

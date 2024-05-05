@@ -1,3 +1,39 @@
 /* COLORS */
+$primary-color: #032541;
+$container-color: whitesmoke;
+$white-color: white;
+$black-color: black;
 
-$primary: #032541;
+/* TEXT */
+$font: "Inter", sans-serif;
+
+/* FONTS */
+$font-size: 16px;
+$font-weight: 400;
+$font-style: normal;
+$line-height: 1.5;
+
+/* SHADOWS */
+$shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 0 10px rgba(0, 0, 0, 0.5);
+$shadow-darker: 0 0 10px rgba(0, 0, 0, 0.8);
+$shadow-darkest: 0 0 10px rgba(0, 0, 0, 0.9);
+
+/* BORDER RADIUS */
+$border-radius-small: 3px;
+$border-radius-medium: 5px;
+$border-radius-large: 10px;
+$border-radius-circle: 50%;
+
+/* SPACING */
+$spacing-small: 5px;
+$spacing-medium: 10px;
+$spacing-large: 20px;
+
+/* BREAKPOINTS */
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$widescreen: 1400px;
+$fullHD: 1920px;
