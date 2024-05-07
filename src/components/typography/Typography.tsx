@@ -17,14 +17,21 @@ export interface TypographyProps
   variant: keyof typeof TextVariants;
   children: React.ReactNode;
   type?: "primary" | "secondary" | "tertiary";
+  truncate?: boolean;
 }
 
-const Typography: FC<TypographyProps> = ({ variant, children, type = "primary", ...rest }) => {
+const Typography: FC<TypographyProps> = ({
+  variant,
+  children,
+  type = "primary",
+  truncate = false,
+  ...rest
+}) => {
   const Component = TextVariants[variant];
 
   return (
     <Component
-      className={`${style["typography"]} ${style[`${variant}`]} ${style[`${type}`]}`}
+      className={`${style["typography"]} ${truncate && style["truncate"]} ${style[`${variant}`]} ${style[`${type}`]}`}
       {...rest}
     >
       {children}

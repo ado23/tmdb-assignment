@@ -17,7 +17,11 @@ const MediaCard: FC<MediaCardProps> = ({ name, poster, rating, releaseDate, hand
 
     <div className={style["text-container"]}>
       <Rating rating={rating} />
-      <Typography variant="subtitle">{name}</Typography>
+      <div className={style["text-truncate-container"]}>
+        <Typography variant="subtitle" truncate={true}>
+          {name}
+        </Typography>
+      </div>
       <Typography variant="text">{releaseDate}</Typography>
     </div>
   </button>
