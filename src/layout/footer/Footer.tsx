@@ -1,12 +1,13 @@
 import { FC } from "react";
 
+import { Typography } from "components/index";
 import Social from "layout/footer/Social";
 import styles from "layout/footer/style.module.scss";
 
 const Footer: FC = () => (
   <>
     <div className={styles.text}>
-      <span> Tmdb assigment @2024 </span>
+      <Typography variant="text"> © 2024 All rights reserved </Typography>
     </div>
     <Social />
   </>

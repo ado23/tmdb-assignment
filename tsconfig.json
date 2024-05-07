@@ -18,7 +18,8 @@
       "assets/*": ["src/assets/*"],
       "styles/*": ["src/styles/*"],
       "features/*": ["src/features/*"],
-      "utilities/*": ["src/utilities/*"]
+      "utilities/*": ["src/utilities/*"],
+      "constants/*": ["src/constants/*"]
     },
     "types": ["vitest/globals", "@testing-library/jest-dom"],
 

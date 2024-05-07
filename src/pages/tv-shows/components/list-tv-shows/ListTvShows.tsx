@@ -1,4 +1,5 @@
-import { MediaCard } from "components/index";
+import { MediaCard, Typography } from "components/index";
+import { IMAGE_BASE_URL } from "constants/index";
 import style from "pages/tv-shows/components/list-tv-shows/style.module.scss";
 import useListTvShows from "pages/tv-shows/components/list-tv-shows/useListTvShows";
 
@@ -8,7 +9,9 @@ const ListTvShows = () => {
   return (
     <>
       <div className={style["text-container"]}>
-        <h2> Top 10 rated TV shows </h2>
+        <Typography variant="subtitle" type="secondary">
+          TOP 10 RATED TV SHOWS
+        </Typography>
       </div>
 
       <div className={style["container"]}>
@@ -16,10 +19,10 @@ const ListTvShows = () => {
           <MediaCard
             key={id}
             name={name ?? ""}
-            poster={`https://media.themoviedb.org/t/p/w1280${poster_path}`}
             rating={vote_average ?? 0}
             releaseDate={first_air_date ?? ""}
             handleOnClick={() => handleOnClick(id)}
+            poster={`${IMAGE_BASE_URL}/w1280${poster_path}`}
           />
         ))}
       </div>

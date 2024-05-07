@@ -38,11 +38,10 @@ main {
 footer {
   background: $brand-color;
   grid-area: footer;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 90px;
   width: 100%;
   z-index: 5;
 }
