@@ -1,5 +1,5 @@
-import { Icon } from "components/index";
+import appLogo from "assets/images/app-logo.png";
 
-const Navbar = () => <Icon name="tmdb-logo" viewBox="0 0 430 30" w="430px" h="30px" />;
+const Navbar = () => <img src={appLogo} alt="navbar" />;
 
 export default Navbar;
