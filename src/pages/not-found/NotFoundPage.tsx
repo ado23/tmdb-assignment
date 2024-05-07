@@ -1,15 +1,14 @@
-import useRouteHelpers from "router/routeHelpers";
+import { Typography } from "components/index";
+import { BackButton } from "features/index";
+import style from "pages/not-found/style.module.scss";
 
-const NotFoundPage = () => {
-  const { goBack } = useRouteHelpers();
-
-  return (
-    <div>
-      <h1>404 Page not found</h1>
-
-      <button onClick={goBack}>Go back</button>
-    </div>
-  );
-};
+const NotFoundPage = () => (
+  <div className={style["not-found-container"]}>
+    <Typography variant="title" type="secondary">
+      404 Page Not Found
+    </Typography>
+    <BackButton />
+  </div>
+);
 
 export default NotFoundPage;
