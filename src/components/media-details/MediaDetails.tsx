@@ -6,6 +6,7 @@ import style from "components/media-details/style.module.scss";
 type MediaDetailsProps = {
   title: string;
   imgUrl: string;
+  videoUrl: string | null;
   rating: number;
   tagline: string;
   overview: string;
@@ -18,6 +19,7 @@ const MediaDetails: FC<MediaDetailsProps> = ({
   title,
   rating,
   imgUrl,
+  videoUrl,
   tagline,
   overview,
   voteCount,
@@ -25,8 +27,16 @@ const MediaDetails: FC<MediaDetailsProps> = ({
   originalTitle
 }) => (
   <div className={style["media-details-container"]}>
-    <div className={style["media-details-img-container"]}>
+    {/* <div className={style["media-details-img-container"]}>
       <img src={imgUrl} alt={title} />
+    </div> */}
+
+    <div className={style["media-details-img-container"]}>
+      {videoUrl ? (
+        <iframe title={`video-${title}`} src={videoUrl} />
+      ) : (
+        <img src={imgUrl} alt={title} />
+      )}
     </div>
 
     <div className={style["media-details-text-container"]}>

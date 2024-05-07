@@ -1,10 +1,12 @@
 import { Loader, MediaDetails } from "components/index";
+import { IMAGE_BASE_URL } from "constants/index";
 import { BackButton } from "features/index";
 import style from "pages/tv-shows/view/details/style.module.scss";
 import useTvShowDetailsPage from "pages/tv-shows/view/details/useTvShowDetailsPage";
 
 const TvShowDetailsPage = () => {
   const { selectedTvShow, isLoading } = useTvShowDetailsPage();
+  const imgUrl = `${IMAGE_BASE_URL}/w1280${selectedTvShow?.backdrop_path}`;
 
   if (isLoading) return <Loader />;
 
@@ -15,7 +17,8 @@ const TvShowDetailsPage = () => {
       </div>
 
       <MediaDetails
-        imgUrl={`https://media.themoviedb.org/t/p/w1280${selectedTvShow?.backdrop_path}`}
+        imgUrl={imgUrl}
+        videoUrl={null}
         title={selectedTvShow?.name ?? ""}
         rating={selectedTvShow?.vote_average ?? 0}
         releaseDate={selectedTvShow?.first_air_date ?? ""}
