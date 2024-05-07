@@ -17,7 +17,7 @@
 }
 
 nav {
-  background: $primary-color;
+  background: $brand-color;
   grid-area: nav;
   position: sticky;
   top: 0;
@@ -36,7 +36,7 @@ main {
 }
 
 footer {
-  background: $primary-color;
+  background: $brand-color;
   grid-area: footer;
   color: white;
   display: flex;

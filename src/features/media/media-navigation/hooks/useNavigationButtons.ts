@@ -8,8 +8,8 @@ const useNavigationButtons = (): {
 } => {
   const { isActivePath } = useIsActivePath();
 
-  const moviesButtonVariant = isActivePath(Paths.MOVIES) ? "primary" : "ghost";
-  const tvShowsButtonVariant = isActivePath(Paths.TV_SHOWS) ? "primary" : "ghost";
+  const moviesButtonVariant = isActivePath(Paths.MOVIES) ? "primary" : "secondary";
+  const tvShowsButtonVariant = isActivePath(Paths.TV_SHOWS) ? "primary" : "secondary";
 
   return { moviesButtonVariant, tvShowsButtonVariant };
 };

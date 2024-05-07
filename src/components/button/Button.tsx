@@ -30,22 +30,20 @@ const Button: FC<ButtonProps> = ({
   size = "md",
   type = "button",
   variant = "primary"
-}) => {
-  return (
-    <>
-      {label && <label htmlFor={id}>{label}</label>}
-      <button
-        onClick={onClick}
-        disabled={disabled}
-        aria-label={ariaLabel}
-        type={type}
-        aria-describedby={ariaDescribedBy}
-        className={`${style["button"]} ${style[`${variant}`]} ${style[`${size}`]}`}
-      >
-        {text}
-      </button>
-    </>
-  );
-};
+}) => (
+  <>
+    {label && <label htmlFor={id}>{label}</label>}
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      aria-label={ariaLabel}
+      aria-describedby={ariaDescribedBy}
+      className={`${style["button"]} ${style[`${variant}`]} ${style[`${size}`]}`}
+    >
+      {text}
+    </button>
+  </>
+);
 
 export default Button;

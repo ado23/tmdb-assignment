@@ -1,13 +1,21 @@
 /* COLORS */
-$primary-color: #032541;
+
+/* BRAND COLORS */
+$brand-color: #032541;
 $container-color: whitesmoke;
+$card-container-color: #0d3d56;
 $white-color: white;
 $black-color: black;
 
+/* TEXT COLORS */
+$text-color-primary: $white-color;
+$text-color-secondary: #334144;
+
+/* BUTTON COLORS */
 $primary-button-color: #0468bf;
 $primary-button-hover-color: #049dd9;
 $primary-button-active-color: #0070d2;
-$secondary-button-color: #8c8c8c;
+$secondary-button-color: #dad4d4;
 $secondary-button-hover-color: #e0e0e0;
 $secondary-button-active-color: #b3b3b3;
 $ghost-button-color: transparent;
@@ -24,7 +32,7 @@ $font-size-large: 20px;
 $font-weight-light: 300;
 $font-weight-medium: 400;
 $font-weight-bold: 700;
-$font-style: normal;
+$font-style-normal: normal;
 $line-height: 1;
 
 /* LETTER SPACING */
@@ -36,7 +44,7 @@ $padding-medium: 10px;
 $padding-large: 20px;
 
 /* SHADOWS */
-$shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 $shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
 $shadow-dark: 0 0 10px rgba(0, 0, 0, 0.5);
 $shadow-darker: 0 0 10px rgba(0, 0, 0, 0.8);

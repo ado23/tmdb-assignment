@@ -5,7 +5,7 @@ import { Api, AuthenticationValidateKeyError } from "src/core/api/generatedApi";
 const { instance, v3: BaseApi } = new Api();
 
 const errorHandler = (error: AxiosError<AuthenticationValidateKeyError>) => {
-  console.log(error);
+  throw error;
 };
 
 export const initializeHttpInterceptors = () => {

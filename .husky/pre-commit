@@ -3,9 +3,9 @@
 
 echo '🏗️👷 Running pre-commit git hook...'
 
-# yarn lint || (
-#     echo '🔨❌ You have a problem in your code. Check linter 🔨❌';
-#     false;
-# )
+yarn lint || (
+    echo '🔨❌ You have a problem in your code. Check linter 🔨❌';
+    false;
+)
 
 echo '🎉 No error found: committing this now.... 🚀'

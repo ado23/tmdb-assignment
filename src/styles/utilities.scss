@@ -1,0 +1,14 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin border-top-lef-right-radius($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-left-right-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
