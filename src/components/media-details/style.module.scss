@@ -13,8 +13,8 @@
 }
 
 .media-details-img-container {
-  width: 900px;
-  height: 650px;
+  // width: 900px;
+  // height: 650px;
   border-radius: $border-radius-large;
 }
 
@@ -47,4 +47,16 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media screen and (max-width: $widescreen-breakpoint) {
+  .media-details-container img {
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+    border-bottom-left-radius: 0px;
+  }
+
+  .media-details-text-container {
+    font-size: 10px !important;
+  }
 }

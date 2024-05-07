@@ -46,7 +46,7 @@ footer {
   z-index: 5;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: $mobile-breakpoint) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 2.2fr 0.1fr;
@@ -54,5 +54,12 @@ footer {
       "nav"
       "main"
       "footer";
+  }
+
+  footer {
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
   }
 }

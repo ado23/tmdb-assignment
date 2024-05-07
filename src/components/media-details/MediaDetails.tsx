@@ -27,10 +27,6 @@ const MediaDetails: FC<MediaDetailsProps> = ({
   originalTitle
 }) => (
   <div className={style["media-details-container"]}>
-    {/* <div className={style["media-details-img-container"]}>
-      <img src={imgUrl} alt={title} />
-    </div> */}
-
     <div className={style["media-details-img-container"]}>
       {videoUrl ? (
         <iframe title={`video-${title}`} src={videoUrl} />

@@ -10,11 +10,6 @@
   letter-spacing: $letter-spacing;
   color: $text-color-primary;
 
-  &.text {
-    font-size: 1rem;
-    line-height: $line-height-text;
-  }
-
   &.title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -22,6 +17,11 @@
 
   &.subtitle {
     font-size: 1.5rem;
+  }
+
+  &.text {
+    font-size: 1rem;
+    line-height: $line-height-text;
   }
 
   &.label {
@@ -40,5 +40,19 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .typography {
+    font-size: $font-size-small;
+
+    &.title {
+      font-size: 2rem;
+    }
+
+    &.subtitle {
+      font-size: 1.2rem;
+    }
   }
 }

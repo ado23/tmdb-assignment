@@ -12,19 +12,21 @@ type MediaCardProps = {
 };
 
 const MediaCard: FC<MediaCardProps> = ({ name, poster, rating, releaseDate, handleOnClick }) => (
-  <button className={style["card-container"]} onClick={handleOnClick}>
-    <img loading="lazy" src={poster} alt={name} className={style["img-container"]} />
+  <div>
+    <button className={style["card-container"]} onClick={handleOnClick}>
+      <img loading="lazy" src={poster} alt={name} className={style["img-container"]} />
 
-    <div className={style["text-container"]}>
-      <Rating rating={rating} />
-      <div className={style["text-truncate-container"]}>
-        <Typography variant="subtitle" truncate={true}>
-          {name}
-        </Typography>
+      <div className={style["text-container"]}>
+        <Rating rating={rating} />
+        <div className={style["text-truncate-container"]}>
+          <Typography variant="subtitle" truncate={true}>
+            {name}
+          </Typography>
+        </div>
+        <Typography variant="text">{releaseDate}</Typography>
       </div>
-      <Typography variant="text">{releaseDate}</Typography>
-    </div>
-  </button>
+    </button>
+  </div>
 );
 
 export default MediaCard;
