@@ -12,7 +12,8 @@ enum TextVariants {
   h6 = "h6"
 }
 
-interface TypographyProps extends React.HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement> {
+export interface TypographyProps
+  extends React.HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement> {
   variant: keyof typeof TextVariants;
   children: React.ReactNode;
   type?: "primary" | "secondary" | "tertiary";

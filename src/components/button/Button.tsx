@@ -34,6 +34,7 @@ const Button: FC<ButtonProps> = ({
   <>
     {label && <label htmlFor={id}>{label}</label>}
     <button
+      id={id}
       type={type}
       onClick={onClick}
       disabled={disabled}
