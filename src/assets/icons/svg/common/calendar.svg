@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+    style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd">
+    <path style="opacity:.987"
+        d="M9.5-.5h6v4h18v-4h6v4h8v9h-46v-9h8zm2 2q1.79.705 2 3l-1 3a9.87 9.87 0 0 1-1-6m24 0q1.79.705 2 3l-1 3a9.87 9.87 0 0 1-1-6" />
+    <path style="opacity:.999"
+        d="M1.5 14.5h46v33h-46zm10 6h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5zm-21 7h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5zm-21 7h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5zm7 0h5v5h-5z" />
+</svg>

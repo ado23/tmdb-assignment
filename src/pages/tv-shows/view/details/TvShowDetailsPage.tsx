@@ -1,10 +1,12 @@
-import { MediaDetails } from "components/index";
+import { Loader, MediaDetails } from "components/index";
 import { BackButton } from "features/index";
 import style from "pages/tv-shows/view/details/style.module.scss";
 import useTvShowDetailsPage from "pages/tv-shows/view/details/useTvShowDetailsPage";
 
 const TvShowDetailsPage = () => {
-  const { selectedTvShow } = useTvShowDetailsPage();
+  const { selectedTvShow, isLoading } = useTvShowDetailsPage();
+
+  if (isLoading) return <Loader />;
 
   return (
     <div className={style["big-container"]}>

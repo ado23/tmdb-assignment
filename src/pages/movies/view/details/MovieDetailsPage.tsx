@@ -1,10 +1,12 @@
-import { MediaDetails } from "components/index";
+import { Loader, MediaDetails } from "components/index";
 import { BackButton } from "features/index";
 import style from "pages/movies/view/details/style.module.scss";
 import useMovieDetailsPage from "pages/movies/view/details/useMovieDetailsPage";
 
 const MovieDetailsPage = () => {
-  const { selectedMovie } = useMovieDetailsPage();
+  const { selectedMovie, isLoading } = useMovieDetailsPage();
+
+  if (isLoading) return <Loader />;
 
   return (
     <div className={style["big-container"]}>

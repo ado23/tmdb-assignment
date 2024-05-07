@@ -10,6 +10,7 @@ $black-color: black;
 /* TEXT COLORS */
 $text-color-primary: $white-color;
 $text-color-secondary: #334144;
+$text-color-tertiary: #a7a7a7;
 
 /* BUTTON COLORS */
 $primary-button-color: #0468bf;
@@ -33,7 +34,8 @@ $font-weight-light: 300;
 $font-weight-medium: 400;
 $font-weight-bold: 700;
 $font-style-normal: normal;
-$line-height: 1;
+$line-height-normal: 1;
+$line-height-text: 1.2rem;
 
 /* LETTER SPACING */
 $letter-spacing: normal;

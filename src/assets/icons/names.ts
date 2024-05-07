@@ -4,5 +4,6 @@ export enum IconNames {
   Github = "github",
   Linkedin = "linkedin",
   Rating = "rating",
-  Community = "community"
+  Community = "community",
+  Calendar = "calendar"
 }

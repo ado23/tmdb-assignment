@@ -14,7 +14,7 @@ const ErrorFallback: FC<{ error: Error; resetErrorBoundary: () => void }> = ({
       id="error-boundary-button"
       text="Try again"
       onClick={resetErrorBoundary}
-      variant="secondary"
+      variant="primary"
       ariaLabel="Go back"
     />
   </div>

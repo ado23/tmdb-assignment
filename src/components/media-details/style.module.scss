@@ -1,35 +1,41 @@
+@import "src/styles/variables.scss";
+@import "src/styles/utilities.scss";
+
 .media-details-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  // padding: 20px;
-  background: #0d3d56;
-  color: white;
+  box-shadow: $shadow-dark;
+  border-radius: $border-radius-large;
+  background: $card-container-color;
 }
 
 .media-details-img-container {
   width: 900px;
   height: 650px;
-  border-radius: 10px;
+  border-radius: $border-radius-large;
 }
 
 .media-details-container img {
+  @include border-top-left-bottom-left-radius($border-radius-large);
   width: 100%;
   height: 100%;
-  border-radius: 10px 0px 0px 10px;
   object-fit: cover;
   background-size: contain;
 }
 
 .media-details-text-container {
-  display: flex;
+  @include flex-column;
   flex: 1;
-  flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   padding: 15px;
   text-align: left;
+}
+
+.flex-center-gap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

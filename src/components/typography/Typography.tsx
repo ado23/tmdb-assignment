@@ -15,7 +15,7 @@ enum TextVariants {
 interface TypographyProps extends React.HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement> {
   variant: keyof typeof TextVariants;
   children: React.ReactNode;
-  type?: "primary" | "secondary";
+  type?: "primary" | "secondary" | "tertiary";
 }
 
 const Typography: FC<TypographyProps> = ({ variant, children, type = "primary", ...rest }) => {

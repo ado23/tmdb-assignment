@@ -6,22 +6,22 @@
   font-size: $font-size-medium;
   font-weight: $font-weight-medium;
   font-style: $font-style-normal;
-  line-height: $line-height;
+  line-height: $line-height-normal;
   letter-spacing: $letter-spacing;
   color: $text-color-primary;
 
   &.text {
     font-size: 1rem;
+    line-height: $line-height-text;
   }
 
   &.title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
   &.subtitle {
     font-size: 1.5rem;
-    font-weight: bold;
   }
 
   &.label {
@@ -30,5 +30,9 @@
 
   &.secondary {
     color: $text-color-secondary;
+  }
+
+  &.tertiary {
+    color: $text-color-tertiary;
   }
 }
