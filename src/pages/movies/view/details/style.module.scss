@@ -1,0 +1,11 @@
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 100px;
+}
+
+.big-container-button {
+  align-self: flex-start;
+  padding: 20px 20px 20px 0px;
+}

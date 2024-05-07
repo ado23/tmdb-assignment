@@ -1,0 +1,15 @@
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 10px 0px;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btn-group button:not(:first-child) {
+  border-radius: 0px 5px 5px 0px;
+}

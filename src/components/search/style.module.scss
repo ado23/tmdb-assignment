@@ -1,0 +1,49 @@
+@import "src/styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  box-shadow:
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 12px;
+  min-height: 28px;
+  vertical-align: middle;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.24s, 0.24s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  &:focus {
+    box-shadow:
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(58 151 212 / 36%) 0px 0px 0px 4px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+  }
+}

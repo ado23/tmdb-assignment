@@ -1,0 +1,39 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-button {
+  align-self: center;
+  margin-top: 10px;
+  background-color: #0070d2;
+  border-radius: 0.25rem;
+  border: 1px solid #0070d2;
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+  padding: 0 16px;
+  outline: none;
+  cursor: pointer;
+  &:focus {
+    border-color: #0070d2;
+    box-shadow: 0 0 0 2px rgba(0, 112, 210, 0.5);
+  }
+  &:active {
+    background-color: #0066cc;
+    border-color: #0066cc;
+  }
+
+  &:hover {
+    background-color: #0066cc;
+    border-color: #0066cc;
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0px 100px;
+  padding-bottom: 10px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 100px;
+}

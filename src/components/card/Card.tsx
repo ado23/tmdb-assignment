@@ -8,10 +8,11 @@ type TCard = {
   rating: number | undefined;
   releaseDate: string;
   poster: string;
+  handleOnClick?: () => void;
 };
 
-const Card: FC<TCard> = ({ name, poster, rating, releaseDate }) => (
-  <div className={style["card-container"]}>
+const Card: FC<TCard> = ({ name, poster, rating, releaseDate, handleOnClick }) => (
+  <button className={style["card-container"]} onClick={handleOnClick}>
     <img loading="lazy" src={poster} alt={name} className={style["img-container"]} />
 
     <div className={style["text-container"]}>
@@ -23,7 +24,7 @@ const Card: FC<TCard> = ({ name, poster, rating, releaseDate }) => (
       <p>{name}</p>
       <p>{releaseDate}</p>
     </div>
-  </div>
+  </button>
 );
 
 export default Card;

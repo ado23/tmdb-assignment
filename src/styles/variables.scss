@@ -4,14 +4,36 @@ $container-color: whitesmoke;
 $white-color: white;
 $black-color: black;
 
+$primary-button-color: #0468bf;
+$primary-button-hover-color: #049dd9;
+$primary-button-active-color: #0070d2;
+$secondary-button-color: #8c8c8c;
+$secondary-button-hover-color: #e0e0e0;
+$secondary-button-active-color: #b3b3b3;
+$ghost-button-color: transparent;
+$ghost-button-hover-color: #e0e0e0;
+$ghost-button-active-color: #b3b3b3;
+
 /* TEXT */
 $font: "Inter", sans-serif;
 
 /* FONTS */
-$font-size: 16px;
-$font-weight: 400;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 20px;
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
 $font-style: normal;
-$line-height: 1.5;
+$line-height: 1;
+
+/* LETTER SPACING */
+$letter-spacing: normal;
+
+/* PADDING */
+$padding-small: 5px;
+$padding-medium: 10px;
+$padding-large: 20px;
 
 /* SHADOWS */
 $shadow: 0 0 10px rgba(0, 0, 0, 0.2);
